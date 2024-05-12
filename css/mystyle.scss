@@ -41,6 +41,10 @@ body {
   }
 }
 
+.productHeading {
+  font-weight: 600;
+}
+
 // Hero Section
 .hero_sec {
   background-color: #151515;
@@ -149,7 +153,9 @@ body {
 
     &:hover {
       background-color: #141d38;
-      h5,
+      h5 {
+        color: $primaryBlue;
+      }
       p {
         color: white;
       }
@@ -416,6 +422,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .service_card {
+    padding: 2rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .productHeading {
+    font-size: 2rem;
+    margin-bottom: 0 !important;
+  }
   .footer_bottom {
     flex-direction: column;
     align-items: center;
@@ -443,7 +457,7 @@ footer {
       margin-bottom: 2rem;
     }
     .service_card {
-      margin: 0.5rem 1rem;
+      margin: 0.5rem;
     }
   }
   .meet_sec {

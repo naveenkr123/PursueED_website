@@ -36,6 +36,10 @@ body {
   background-image: url(/images/menu.svg);
 }
 
+.productHeading {
+  font-weight: 600;
+}
+
 .hero_sec {
   background-color: #151515;
   background-image: url(/images/background-oillusion.png);
@@ -139,7 +143,9 @@ body {
 .services_sec .service_card:hover {
   background-color: #141d38;
 }
-.services_sec .service_card:hover h5,
+.services_sec .service_card:hover h5 {
+  color: #0060ff;
+}
 .services_sec .service_card:hover p {
   color: white;
 }
@@ -419,6 +425,14 @@ footer .service_links:hover {
   }
 }
 @media (max-width: 768px) {
+  .service_card {
+    padding: 2rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .productHeading {
+    font-size: 2rem;
+    margin-bottom: 0 !important;
+  }
   .footer_bottom {
     flex-direction: column;
     align-items: center;
@@ -443,7 +457,7 @@ footer .service_links:hover {
     margin-bottom: 2rem;
   }
   .services_sec .service_card {
-    margin: 0.5rem 1rem;
+    margin: 0.5rem;
   }
   .meet_sec .wrapper {
     flex-direction: column;
